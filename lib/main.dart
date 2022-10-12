@@ -1,7 +1,6 @@
 import 'package:bus_stop_develop_admin/controllers/authProvider.dart';
 import 'package:bus_stop_develop_admin/controllers/locProvider.dart';
 import 'package:bus_stop_develop_admin/views/auth/wrapper.dart';
-import 'package:bus_stop_develop_admin/views/welcome/initial.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

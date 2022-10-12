@@ -143,54 +143,6 @@ class _BusCompanyDestinationsViewEditState extends State<BusCompanyDestinationsV
                         padding: const EdgeInsets.symmetric(
                             horizontal: 30, vertical: 10),
                         child: GestureDetector(
-                          // onTap: () async {
-                          //   if (_destController.text.isEmpty) {
-                          //     Get.snackbar(
-                          //         "Failed", "Select Destination Location",
-                          //         colorText: Colors.white,
-                          //         backgroundColor: Colors.purpleAccent);
-                          //   } else if (_parkNameController.text.isEmpty) {
-                          //     Get.snackbar(
-                          //         "Failed", "Select Destination Location",
-                          //         colorText: Colors.white,
-                          //         backgroundColor: Colors.purpleAccent);
-                          //   } else if(packCoordinates == null){
-                          //     Get.snackbar(
-                          //         "Failed", "Select Park Coordinates",
-                          //         colorText: Colors.white,
-                          //         backgroundColor: Colors.purpleAccent);
-                          //   }
-                          //   else {
-                          //     setState(() {
-                          //       isLoading = true;
-                          //     });
-                          //     bool result = await addCompanyParks(
-                          //         companyId: widget.company.uid,
-                          //         destinationId: _destIdController.text,
-                          //         destinationName: _destController.text,
-                          //         parkLocationName: _parkNameController.text.trim(),
-                          //         positionLat:packCoordinates.latitude,
-                          //         positionLng: packCoordinates.longitude
-                          //     );
-                          //     if (result == false) {
-                          //       setState(() {
-                          //         isLoading = false;
-                          //       });
-                          //       Get.snackbar(
-                          //           "Failed To Added Destination/Park", "Try Again",
-                          //           colorText: Colors.white,
-                          //           backgroundColor: Colors.purpleAccent);
-                          //     } else {
-                          //       setState(() {
-                          //         isLoading = false;
-                          //       });
-                          //       Get.back();
-                          //       Get.snackbar("Success", "Added Destination/Park",
-                          //           colorText: Colors.white,
-                          //           backgroundColor: Colors.greenAccent);
-                          //     }
-                          //   }
-                          // },
                           child: Container(
                               alignment: Alignment.center,
                               height: 62,
@@ -205,7 +157,7 @@ class _BusCompanyDestinationsViewEditState extends State<BusCompanyDestinationsV
                               )),
                         ),
                       ),
-                      SizedBox(height: 5,),
+                      const SizedBox(height: 5,),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 30, vertical: 10),

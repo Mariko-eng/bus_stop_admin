@@ -6,10 +6,6 @@ import 'package:bus_stop_develop_admin/views/pages/busAdmin/main/BusCompanyProfi
 import 'package:bus_stop_develop_admin/views/pages/busAdmin/BusParkLocations.dart';
 import 'package:bus_stop_develop_admin/views/pages/busAdmin/TicketNumberVerify.dart';
 import 'package:bus_stop_develop_admin/views/pages/busAdmin/main/TicketScanVerify.dart';
-import 'package:bus_stop_develop_admin/views/pages/busAdmin/TicketsList.dart';
-import 'package:bus_stop_develop_admin/views/pages/busAdmin/TripNew.dart';
-import 'package:bus_stop_develop_admin/views/pages/busAdmin/TripsList.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

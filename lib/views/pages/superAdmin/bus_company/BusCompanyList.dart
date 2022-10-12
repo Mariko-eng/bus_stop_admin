@@ -2,6 +2,7 @@ import 'package:bus_stop_develop_admin/models/busCompany.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BusCompanyDestinations.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BusCompanyNew.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BusCompanyTrips.dart';
+import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BusCompanyViewEdit.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BuscompanyTickets.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -125,6 +126,15 @@ class _BusCompanyListState extends State<BusCompanyList> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => BusCompanyDestinations(
+                        company: company,
+                      )))
+            },
+            if(option == "View/Edit Bus Company"){
+              Navigator.of(context).pop(),
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => BusCompanyViewEdit(
                         company: company,
                       )))
             }

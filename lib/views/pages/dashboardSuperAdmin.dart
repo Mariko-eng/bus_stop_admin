@@ -7,6 +7,7 @@ import 'package:bus_stop_develop_admin/views/pages/superAdmin/AllTickets.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/AllTrips.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/SettingsScreen.dart';
 import 'package:bus_stop_develop_admin/views/pages/superAdmin/bus_company/BusCompanyList.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,14 +32,26 @@ class _DashboardSuperAdminState extends State<DashboardSuperAdmin> {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.menu,
-                      color:Colors.red,
-                      size: 40,
-                    ),
-                    Icon(Icons.pages,
-                      color:Colors.red,
-                      size: 40,
+                  children: [
+                    Container(
+                        width:55,height:45,
+                        child: Image.asset("assets/images/image6.png")),
+                    GestureDetector(
+                      onTap: (){
+                        FirebaseAuth.instance.signOut();
+                      },
+                      child: Row(
+                        children: [
+                          Icon(Icons.logout,
+                              color: Colors.yellow[900]
+                          ),
+                          Text("Logout",
+                            style: TextStyle(
+                                color: Colors.yellow[900]
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
